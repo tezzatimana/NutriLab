@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>NutriLab</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<div class="app">
+
+
+<header class="header">
+
+<img src="imagenes/logo.png" class="logo">
+
+<h1>NutriLab</h1>
+
+<p>
+Una experiencia interactiva sobre alimentación saludable,
+trastornos alimenticios y bienestar.
+</p>
+
+</header>
+
+
+
+
+<nav class="menu">
+
+<button onclick="mostrar('inicio')">
+Inicio
+</button>
+
+<button onclick="mostrar('aprende')">
+Aprende
+</button>
+
+<button onclick="mostrar('plato')">
+Plato Inteligente
+</button>
+
+<button onclick="mostrar('juegos')">
+Juegos
+</button>
+
+<button onclick="mostrar('evaluacion')">
+Autoevaluación
+</button>
+
+<button onclick="mostrar('robot')">
+NutriBot
+</button>
+
+<button onclick="mostrar('diploma')">
+Diploma
+</button>
+
+</nav>
+
+
+
+
+
+
+<section id="inicio" class="seccion">
+
+
+<div class="contenido">
+
+
+<div class="texto">
+
+
+<h2>
+Aprende sobre nutrición de una forma interactiva
+</h2>
+
+
+<p>
+Descubre información, crea platos saludables,
+juega y mejora tus hábitos alimenticios.
+</p>
+
+
+
+<button class="boton-principal" onclick="mostrar('aprende')">
+
+Comenzar experiencia
+
+</button>
+
+
+</div>
+
+
+
+<img src="imagenes/inicio.png" class="imagen-principal">
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<section id="aprende" class="seccion oculto">
+
+
+<h2>
+Aprende sobre alimentación
+</h2>
+
+
+<img src="imagenes/trastornos-alimentarios.png" class="imagen-seccion">
+
+
+
+<p class="descripcion">
+
+Conoce los principales problemas relacionados con la alimentación,
+sus características, prevención y la importancia de cuidar nuestra salud.
+
+</p>
+
+
+
+
+
+<div class="tarjetas">
+
+
+
+
+
+<div class="tarjeta">
+
+<h3>
+¿Qué es un trastorno alimenticio?
+</h3>
+
+<p>
+Son alteraciones relacionadas con la alimentación,
+la percepción del cuerpo o la forma de relacionarse con la comida.
+Pueden afectar la salud física y emocional.
+</p>
+
+</div>
+
+
+
+
+
+
+<div class="tarjeta">
+
+<h3>
+Anorexia
+</h3>
+
+<p>
+Es un trastorno alimenticio donde existe una preocupación intensa
+por el peso y la alimentación. Puede afectar el bienestar
+físico y emocional de la persona.
+</p>
+
+</div>
+
+
+
+
+
+
+
+<div class="tarjeta">
+
+<h3>
+Bulimia
+</h3>
+
+<p>
+Se caracteriza por episodios de atracones y conductas que buscan
+compensar esos episodios. Requiere comprensión y apoyo adecuado.
+</p>
+
+</div>
+
+
+
+
+
+
+
+<div class="tarjeta">
+
+<h3>
+Trastorno por atracón
+</h3>
+
+<p>
+Consiste en episodios donde una persona consume una gran cantidad
+de alimentos y siente pérdida de control.
+</p>
+
+</div>
+
+
+
+
+
+
+
+<div class="tarjeta">
+
+<h3>
+Trastorno por evitación o restricción (ARFID)
+</h3>
+
+<p>
+Se relaciona con evitar ciertos alimentos o limitar la variedad
+de comida por diferentes motivos.
+</p>
+
+</div>
+
+
+
+
+
+
+
+<div class="tarjeta">
+
+<h3>
+Gastritis
+</h3>
+
+<p>
+Es una inflamación del estómago que puede relacionarse con
+hábitos alimenticios y requiere cuidado.
+</p>
+
+</div>
+
+
+
+
+
+
+
+<div class="tarjeta">
+
+<h3>
+Desnutrición
+</h3>
+
+<p>
+Ocurre cuando el organismo no recibe los nutrientes necesarios
+para funcionar correctamente.
+</p>
+
+</div>
+
+
+
+
+
+
+
+<div class="tarjeta">
+
+<h3>
+Anemia
+</h3>
+
+<p>
+Puede estar relacionada con la falta de nutrientes importantes
+como el hierro, necesarios para el organismo.
+</p>
+
+</div>
+
+
+
+
+
+</div>
+
+
+</section>
+<section id="plato" class="seccion oculto">
+
+
+<h2>
+Plato Inteligente
+</h2>
+
+
+<img src="imagenes/plato-saludable.png" class="imagen-seccion plato-img">
+
+
+<p class="descripcion">
+
+Arma tu plato seleccionando alimentos y descubre si tiene
+una combinación equilibrada.
+
+</p>
+
+
+
+<img src="imagenes/alimentos-plato-saludable.png" class="imagen-referencia">
+
+
+
+
+
+<div class="alimentos">
+
+
+<h3>
+Selecciona tus alimentos
+</h3>
+
+
+<button onclick="agregarAlimento('Manzana')">
+Manzana
+</button>
+
+
+<button onclick="agregarAlimento('Plátano')">
+Plátano
+</button>
+
+
+<button onclick="agregarAlimento('Brócoli')">
+Brócoli
+</button>
+
+
+<button onclick="agregarAlimento('Zanahoria')">
+Zanahoria
+</button>
+
+
+<button onclick="agregarAlimento('Pollo')">
+Pollo
+</button>
+
+
+<button onclick="agregarAlimento('Pescado')">
+Pescado
+</button>
+
+
+<button onclick="agregarAlimento('Huevo')">
+Huevo
+</button>
+
+
+<button onclick="agregarAlimento('Arroz')">
+Arroz
+</button>
+
+
+<button onclick="agregarAlimento('Papa')">
+Papa
+</button>
+
+
+<button onclick="agregarAlimento('Agua')">
+Agua
+</button>
+
+
+<button onclick="agregarAlimento('Gaseosa')">
+Gaseosa
+</button>
+
+
+
+</div>
+
+
+
+
+
+<div class="mi-plato">
+
+
+<h3>
+Mi plato creado
+</h3>
+
+
+<p id="miPlato">
+
+Selecciona alimentos para comenzar.
+
+</p>
+
+
+
+<button class="boton-principal" onclick="analizarPlato()">
+
+Analizar plato
+
+</button>
+
+
+<p id="resultadoAnalisis">
+
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<section id="juegos" class="seccion oculto">
+
+
+<h2>
+Zona de juegos
+</h2>
+
+
+
+<img src="imagenes/juegos.png" class="imagen-seccion imagen-juegos">
+
+
+
+
+
+<div class="juego">
+
+
+<h3>
+Quiz nutricional
+</h3>
+
+
+<p id="preguntaQuiz">
+
+Preparando pregunta...
+
+</p>
+
+
+
+<div id="opcionesQuiz">
+
+</div>
+
+
+
+<p id="resultadoQuiz">
+
+</p>
+
+
+
+<p id="puntajeQuiz">
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="juego">
+
+
+<h3>
+Verdadero o falso
+</h3>
+
+
+
+<p id="preguntaVF">
+
+Preparando pregunta...
+
+</p>
+
+
+
+<button onclick="responderVF(true)">
+Verdadero
+</button>
+
+
+
+<button onclick="responderVF(false)">
+Falso
+</button>
+
+
+
+<p id="resultadoVF">
+
+</p>
+
+
+
+</div>
+
+
+
+
+
+
+</section>
+<section id="evaluacion" class="seccion oculto">
+
+
+<h2>
+Autoevaluación de hábitos saludables
+</h2>
+
+
+<img src="imagenes/autoevaluacion.png" class="imagen-seccion">
+
+
+
+<div id="preguntasEvaluacion">
+
+
+</div>
+
+
+
+<button class="boton-principal" onclick="calcularEvaluacion()">
+
+Ver resultado
+
+</button>
+
+
+
+<p id="resultadoEvaluacion">
+
+</p>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<section id="robot" class="seccion oculto">
+
+
+<h2>
+NutriBot
+</h2>
+
+
+
+<div class="robot">
+
+
+<img src="imagenes/robot.png">
+
+
+
+<h3>
+Hola, soy NutriBot
+</h3>
+
+
+
+<p>
+Puedo ayudarte con información sobre alimentación
+y hábitos saludables.
+</p>
+
+
+
+
+<input 
+id="preguntaRobot"
+placeholder="Escribe tu pregunta">
+
+
+
+<button onclick="responderRobot()">
+
+Enviar
+
+</button>
+
+
+
+<p id="respuestaRobot">
+
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<section id="diploma" class="seccion oculto">
+
+
+<h2>
+Certificado NutriLab
+</h2>
+
+
+
+<div class="certificado">
+
+
+
+
+<h3>
+Reconocimiento de participación
+</h3>
+
+
+
+<div class="diploma-contenedor">
+
+
+<img src="imagenes/diploma.png">
+
+
+<h2 id="nombreEnDiploma">
+
+</h2>
+
+
+</div>
+
+
+
+<input 
+id="nombreDiploma"
+placeholder="Escribe tu nombre">
+
+
+<button onclick="generarDiploma()">
+
+Generar certificado
+
+</button>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+</div>
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+
+</html>
